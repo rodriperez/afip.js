@@ -4,9 +4,7 @@
   "description": "Libreria para usar los Web Services de AFIP con JavaScript",
   "main": "src/Afip.js",
   "scripts": {
-    "test": "echo \"No test specified\"",
-    "build": "babel src -d lib",
-    "prepublishOnly": "npm run build"
+    "test": "echo \"No test specified\""
   },
   "repository": {
     "type": "git",
