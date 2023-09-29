@@ -42,7 +42,7 @@ module.exports = class RegisterScopeFive extends AfipWebService {
 	 **/
 	async getTaxpayerDetails(identifier) {
 		// Get token and sign
-		let { token, sign } = await this.afip.GetServiceTA('ws_sr_padron_a5');
+		let { token, sign } = await this.afip.GetServiceTA('ws_sr_constancia_inscripcion');
 
 		// Prepare SOAP params
 		let params = {
@@ -65,7 +65,7 @@ module.exports = class RegisterScopeFive extends AfipWebService {
 	 **/
 	async getTaxpayersDetails(identifiers) {
 		// Get token and sign
-		let { token, sign } = await this.afip.GetServiceTA('ws_sr_padron_a5');
+		let { token, sign } = await this.afip.GetServiceTA('ws_sr_constancia_inscripcion');
 
 		// Prepare SOAP params
 		let params = {
